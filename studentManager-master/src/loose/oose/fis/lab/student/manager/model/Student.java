@@ -7,12 +7,18 @@ public class Student {
     private String lastName;
     private int age;
     private double meanGrade;
+    private int an_studiu;
+    private String facultate;
+    private String universitate;
 
-    public Student(String firstName, String lastName, int age, double meanGrade) {
+    public Student(String firstName, String lastName, int age, double meanGrade, int an_studiu, String facultate, String universitate) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
         this.meanGrade = meanGrade;
+        this.an_studiu = an_studiu;
+        this.facultate = facultate;
+        this.universitate = universitate;
     }
 
     @Override
@@ -22,6 +28,9 @@ public class Student {
                 ", lastName='" + lastName + '\'' +
                 ", age=" + age +
                 ", meanGrade=" + meanGrade +
+                ", an_studiu=" + an_studiu +
+                ", facultate=" + facultate +
+                ", universitate=" + universitate +
                 '}';
     }
 
@@ -71,5 +80,29 @@ public class Student {
 
     public void setMeanGrade(double meanGrade) {
         this.meanGrade = meanGrade;
+    }
+
+    public int getAnStudiu() {
+        return an_studiu;
+    }
+
+    public void setAnStudiu(int an_studiu) {
+        this.an_studiu = an_studiu;
+    }
+
+    public String getFacultate() {
+        return facultate;
+    }
+
+    public void setFacultate(String facultate) {
+        this.facultate = facultate;
+    }
+
+    public String getUniversitate(){
+        return universitate;
+    }
+
+    public void setUniversitate(String universitate) {
+        this.universitate = universitate;
     }
 }
